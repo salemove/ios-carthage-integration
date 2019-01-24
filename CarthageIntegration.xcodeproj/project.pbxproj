@@ -24,6 +24,8 @@
 		396C7D402162662900C5B03E /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396C7D342162662900C5B03E /* SwiftyBeaver.framework */; };
 		396C7D412162662900C5B03E /* SalemoveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396C7D352162662900C5B03E /* SalemoveSDK.framework */; };
 		396C7D44216383F300C5B03E /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396C7D43216383F300C5B03E /* Moya.framework */; };
+		397CFA7021FAA18300797E17 /* Macaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397CFA6F21FAA18300797E17 /* Macaw.framework */; };
+		397CFA7221FAA67C00797E17 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397CFA7121FAA67B00797E17 /* SWXMLHash.framework */; };
 		39D9AD1B2167749100DD2EE5 /* CarthageIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D9AD1A2167749100DD2EE5 /* CarthageIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		396C7D342162662900C5B03E /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
 		396C7D352162662900C5B03E /* SalemoveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SalemoveSDK.framework; path = "Carthage/Checkouts/ios-bundle/SalemoveSDK.framework"; sourceTree = "<group>"; };
 		396C7D43216383F300C5B03E /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		397CFA6F21FAA18300797E17 /* Macaw.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Macaw.framework; path = Carthage/Build/iOS/Macaw.framework; sourceTree = "<group>"; };
+		397CFA7121FAA67B00797E17 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
 		39D9AD182167749000DD2EE5 /* CarthageIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D9AD1A2167749100DD2EE5 /* CarthageIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageIntegrationTests.swift; sourceTree = "<group>"; };
 		39D9AD1C2167749100DD2EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				397CFA7221FAA67C00797E17 /* SWXMLHash.framework in Frameworks */,
+				397CFA7021FAA18300797E17 /* Macaw.framework in Frameworks */,
 				396C7D44216383F300C5B03E /* Moya.framework in Frameworks */,
 				396C7D372162662900C5B03E /* SocketIO.framework in Frameworks */,
 				396C7D382162662900C5B03E /* ObjectMapper.framework in Frameworks */,
@@ -127,6 +133,8 @@
 		396C7D2A2162662800C5B03E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				397CFA7121FAA67B00797E17 /* SWXMLHash.framework */,
+				397CFA6F21FAA18300797E17 /* Macaw.framework */,
 				396C7D43216383F300C5B03E /* Moya.framework */,
 				396C7D302162662900C5B03E /* Alamofire.framework */,
 				396C7D2D2162662900C5B03E /* Locksmith.framework */,
@@ -270,6 +278,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WebRTC.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Macaw.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SWXMLHash.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -285,6 +295,8 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyBeaver.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/WebRTC.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Macaw.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SWXMLHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
