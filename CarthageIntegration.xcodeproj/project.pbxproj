@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3909A5DD2282CE4000D4EF37 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3979A26D225B9D77006D1A9D /* WebRTC.framework */; };
 		394E91FF215F8FAC00ECAB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E91FE215F8FAC00ECAB2C /* AppDelegate.swift */; };
 		394E9201215F8FAC00ECAB2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394E9200215F8FAC00ECAB2C /* ViewController.swift */; };
 		394E9204215F8FAC00ECAB2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394E9202215F8FAC00ECAB2C /* Main.storyboard */; };
@@ -19,7 +20,6 @@
 		396C7D3B2162662900C5B03E /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396C7D2F2162662900C5B03E /* ReactiveSwift.framework */; };
 		396C7D3C2162662900C5B03E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396C7D302162662900C5B03E /* Alamofire.framework */; };
 		396C7D3D2162662900C5B03E /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396C7D312162662900C5B03E /* Starscream.framework */; };
-		396C7D3E2162662900C5B03E /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396C7D322162662900C5B03E /* WebRTC.framework */; };
 		396C7D3F2162662900C5B03E /* SwiftPhoenixClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396C7D332162662900C5B03E /* SwiftPhoenixClient.framework */; };
 		396C7D402162662900C5B03E /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396C7D342162662900C5B03E /* SwiftyBeaver.framework */; };
 		396C7D412162662900C5B03E /* SalemoveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396C7D352162662900C5B03E /* SalemoveSDK.framework */; };
@@ -54,11 +54,11 @@
 		396C7D2F2162662900C5B03E /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		396C7D302162662900C5B03E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		396C7D312162662900C5B03E /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
-		396C7D322162662900C5B03E /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = Carthage/Build/iOS/WebRTC.framework; sourceTree = "<group>"; };
 		396C7D332162662900C5B03E /* SwiftPhoenixClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftPhoenixClient.framework; path = Carthage/Build/iOS/SwiftPhoenixClient.framework; sourceTree = "<group>"; };
 		396C7D342162662900C5B03E /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
 		396C7D352162662900C5B03E /* SalemoveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SalemoveSDK.framework; path = "Carthage/Checkouts/ios-bundle/SalemoveSDK.framework"; sourceTree = "<group>"; };
 		396C7D43216383F300C5B03E /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		3979A26D225B9D77006D1A9D /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = "Carthage/Checkouts/ios-webrtc/output/bitcode/WebRTC.framework"; sourceTree = "<group>"; };
 		397CFA6F21FAA18300797E17 /* Macaw.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Macaw.framework; path = Carthage/Build/iOS/Macaw.framework; sourceTree = "<group>"; };
 		397CFA7121FAA67B00797E17 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
 		39D9AD182167749000DD2EE5 /* CarthageIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarthageIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3909A5DD2282CE4000D4EF37 /* WebRTC.framework in Frameworks */,
 				397CFA7221FAA67C00797E17 /* SWXMLHash.framework in Frameworks */,
 				397CFA7021FAA18300797E17 /* Macaw.framework in Frameworks */,
 				396C7D44216383F300C5B03E /* Moya.framework in Frameworks */,
@@ -81,7 +82,6 @@
 				396C7D3B2162662900C5B03E /* ReactiveSwift.framework in Frameworks */,
 				396C7D3C2162662900C5B03E /* Alamofire.framework in Frameworks */,
 				396C7D3D2162662900C5B03E /* Starscream.framework in Frameworks */,
-				396C7D3E2162662900C5B03E /* WebRTC.framework in Frameworks */,
 				396C7D3F2162662900C5B03E /* SwiftPhoenixClient.framework in Frameworks */,
 				396C7D402162662900C5B03E /* SwiftyBeaver.framework in Frameworks */,
 				396C7D412162662900C5B03E /* SalemoveSDK.framework in Frameworks */,
@@ -133,6 +133,7 @@
 		396C7D2A2162662800C5B03E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3979A26D225B9D77006D1A9D /* WebRTC.framework */,
 				397CFA7121FAA67B00797E17 /* SWXMLHash.framework */,
 				397CFA6F21FAA18300797E17 /* Macaw.framework */,
 				396C7D43216383F300C5B03E /* Moya.framework */,
@@ -146,7 +147,6 @@
 				396C7D312162662900C5B03E /* Starscream.framework */,
 				396C7D332162662900C5B03E /* SwiftPhoenixClient.framework */,
 				396C7D342162662900C5B03E /* SwiftyBeaver.framework */,
-				396C7D322162662900C5B03E /* WebRTC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftPhoenixClient.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/WebRTC.framework",
+				"$(SRCROOT)/Carthage/Checkouts/ios-webrtc/output/bitcode/WebRTC.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Macaw.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SWXMLHash.framework",
@@ -410,7 +410,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -465,7 +465,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -480,6 +480,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-bundle",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/ios-webrtc/output/bitcode",
 				);
 				INFOPLIST_FILE = CarthageIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,7 +489,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.salemove.CarthageIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -503,6 +504,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/ios-bundle",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/ios-webrtc/output/bitcode",
 				);
 				INFOPLIST_FILE = CarthageIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -511,7 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.salemove.CarthageIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -530,7 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.salemove.CarthageIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarthageIntegration.app/CarthageIntegration";
 			};
@@ -550,7 +552,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.salemove.CarthageIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarthageIntegration.app/CarthageIntegration";
 			};
