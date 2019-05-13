@@ -46,3 +46,6 @@ Pods/
 
 # Jazzy docs
 SalemoveSDK/docs
+
+fastlane/report.xml
+fastlane/test_output
