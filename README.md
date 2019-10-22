@@ -8,12 +8,12 @@
 
 ### Sample was created with 
 * XCode 10.2.1 (`/usr/bin/xcodebuild -version`)
-* Swift 5.0.1 (`carthage version`)
-* Carthage 0.33.0 (`xcrun swift -version`)
+* Swift 5.0.1 (`xcrun swift -version`)
+* Carthage 0.33.0 (`carthage version`)
 
 ### Integration steps
 
-#### 1) Ensure directions in Cartfile are pulling explicitly from tags
+#### 1) Ensure that SalemoveSDK dependency in your Cartfile specifies version tag
 * This way you always get the Released state of the SDK
 * Example: `github "Salemove/ios-bundle" "0.16.0"`
 
