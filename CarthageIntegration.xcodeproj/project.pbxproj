@@ -23,30 +23,18 @@
 		C0FB33A023CD30DB00AED730 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338623CD30DB00AED730 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0FB33A123CD30DB00AED730 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338723CD30DB00AED730 /* SwiftyBeaver.framework */; };
 		C0FB33A223CD30DB00AED730 /* SwiftyBeaver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338723CD30DB00AED730 /* SwiftyBeaver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C0FB33A523CD30DC00AED730 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338923CD30DB00AED730 /* ReactiveMoya.framework */; };
-		C0FB33A623CD30DC00AED730 /* ReactiveMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338923CD30DB00AED730 /* ReactiveMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C0FB33A723CD30DC00AED730 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338A23CD30DB00AED730 /* RxMoya.framework */; };
-		C0FB33A823CD30DC00AED730 /* RxMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338A23CD30DB00AED730 /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C0FB33A923CD30DC00AED730 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338B23CD30DB00AED730 /* RxBlocking.framework */; };
-		C0FB33AA23CD30DC00AED730 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338B23CD30DB00AED730 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0FB33AB23CD30DC00AED730 /* Locksmith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338C23CD30DB00AED730 /* Locksmith.framework */; };
 		C0FB33AC23CD30DC00AED730 /* Locksmith.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338C23CD30DB00AED730 /* Locksmith.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C0FB33AD23CD30DC00AED730 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338D23CD30DB00AED730 /* RxSwift.framework */; };
-		C0FB33AE23CD30DC00AED730 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338D23CD30DB00AED730 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0FB33AF23CD30DC00AED730 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338E23CD30DB00AED730 /* Starscream.framework */; };
 		C0FB33B023CD30DC00AED730 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338E23CD30DB00AED730 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0FB33B123CD30DC00AED730 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338F23CD30DB00AED730 /* Moya.framework */; };
 		C0FB33B223CD30DC00AED730 /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB338F23CD30DB00AED730 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0FB33B323CD30DC00AED730 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB339023CD30DB00AED730 /* ObjectMapper.framework */; };
 		C0FB33B423CD30DC00AED730 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB339023CD30DB00AED730 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C0FB33B523CD30DC00AED730 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB339123CD30DB00AED730 /* RxCocoa.framework */; };
-		C0FB33B623CD30DC00AED730 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB339123CD30DB00AED730 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0FB33B723CD30DC00AED730 /* SwiftPhoenixClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB339223CD30DB00AED730 /* SwiftPhoenixClient.framework */; };
 		C0FB33B823CD30DC00AED730 /* SwiftPhoenixClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB339223CD30DB00AED730 /* SwiftPhoenixClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0FB33B923CD30DC00AED730 /* Macaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB339323CD30DB00AED730 /* Macaw.framework */; };
 		C0FB33BA23CD30DC00AED730 /* Macaw.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB339323CD30DB00AED730 /* Macaw.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C0FB33BB23CD30DC00AED730 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB339423CD30DB00AED730 /* RxRelay.framework */; };
-		C0FB33BC23CD30DC00AED730 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB339423CD30DB00AED730 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0FB33BF23CD310600AED730 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB33BE23CD310600AED730 /* WebRTC.framework */; };
 		C0FB33C023CD310600AED730 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0FB33BE23CD310600AED730 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C0FB33C223CDA2F100AED730 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FB33C123CDA2F100AED730 /* ViewController.swift */; };
@@ -61,18 +49,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C0FB33A823CD30DC00AED730 /* RxMoya.framework in Embed Frameworks */,
 				C0FB33B223CD30DC00AED730 /* Moya.framework in Embed Frameworks */,
 				C0FB33B023CD30DC00AED730 /* Starscream.framework in Embed Frameworks */,
 				C0FB33BA23CD30DC00AED730 /* Macaw.framework in Embed Frameworks */,
-				C0FB33BC23CD30DC00AED730 /* RxRelay.framework in Embed Frameworks */,
 				C0FB33A023CD30DB00AED730 /* Alamofire.framework in Embed Frameworks */,
 				C0FB33B823CD30DC00AED730 /* SwiftPhoenixClient.framework in Embed Frameworks */,
 				C0FB33A223CD30DB00AED730 /* SwiftyBeaver.framework in Embed Frameworks */,
-				C0FB33B623CD30DC00AED730 /* RxCocoa.framework in Embed Frameworks */,
-				C0FB33AE23CD30DC00AED730 /* RxSwift.framework in Embed Frameworks */,
-				C0FB33A623CD30DC00AED730 /* ReactiveMoya.framework in Embed Frameworks */,
-				C0FB33AA23CD30DC00AED730 /* RxBlocking.framework in Embed Frameworks */,
 				C0FB339A23CD30DB00AED730 /* ReactiveSwift.framework in Embed Frameworks */,
 				C0FB33AC23CD30DC00AED730 /* Locksmith.framework in Embed Frameworks */,
 				C0FB33C523CDA58600AED730 /* SalemoveSDK.framework in Embed Frameworks */,
@@ -95,26 +77,17 @@
 		C0FB337523CD237E00AED730 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C0FB337823CD237E00AED730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0FB337A23CD237E00AED730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0FB338123CD30DB00AED730 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		C0FB338223CD30DB00AED730 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		C0FB338323CD30DB00AED730 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		C0FB338423CD30DB00AED730 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
 		C0FB338523CD30DB00AED730 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
 		C0FB338623CD30DB00AED730 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		C0FB338723CD30DB00AED730 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
-		C0FB338823CD30DB00AED730 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		C0FB338923CD30DB00AED730 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
-		C0FB338A23CD30DB00AED730 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
-		C0FB338B23CD30DB00AED730 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		C0FB338C23CD30DB00AED730 /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = "<group>"; };
-		C0FB338D23CD30DB00AED730 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		C0FB338E23CD30DB00AED730 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		C0FB338F23CD30DB00AED730 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		C0FB339023CD30DB00AED730 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
-		C0FB339123CD30DB00AED730 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		C0FB339223CD30DB00AED730 /* SwiftPhoenixClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftPhoenixClient.framework; path = Carthage/Build/iOS/SwiftPhoenixClient.framework; sourceTree = "<group>"; };
 		C0FB339323CD30DB00AED730 /* Macaw.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Macaw.framework; path = Carthage/Build/iOS/Macaw.framework; sourceTree = "<group>"; };
-		C0FB339423CD30DB00AED730 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		C0FB33BE23CD310600AED730 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = "Carthage/Checkouts/ios-webrtc/output/bitcode/WebRTC.framework"; sourceTree = "<group>"; };
 		C0FB33C123CDA2F100AED730 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0FB33C323CDA58600AED730 /* SalemoveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SalemoveSDK.framework; path = "Carthage/Checkouts/ios-bundle/SalemoveSDK.framework"; sourceTree = "<group>"; };
@@ -125,18 +98,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0FB33A723CD30DC00AED730 /* RxMoya.framework in Frameworks */,
 				C0FB33B123CD30DC00AED730 /* Moya.framework in Frameworks */,
 				C0FB33AF23CD30DC00AED730 /* Starscream.framework in Frameworks */,
 				C0FB33B923CD30DC00AED730 /* Macaw.framework in Frameworks */,
-				C0FB33BB23CD30DC00AED730 /* RxRelay.framework in Frameworks */,
 				C0FB339F23CD30DB00AED730 /* Alamofire.framework in Frameworks */,
 				C0FB33B723CD30DC00AED730 /* SwiftPhoenixClient.framework in Frameworks */,
 				C0FB33A123CD30DB00AED730 /* SwiftyBeaver.framework in Frameworks */,
-				C0FB33B523CD30DC00AED730 /* RxCocoa.framework in Frameworks */,
-				C0FB33AD23CD30DC00AED730 /* RxSwift.framework in Frameworks */,
-				C0FB33A523CD30DC00AED730 /* ReactiveMoya.framework in Frameworks */,
-				C0FB33A923CD30DC00AED730 /* RxBlocking.framework in Frameworks */,
 				C0FB339923CD30DB00AED730 /* ReactiveSwift.framework in Frameworks */,
 				C0FB33AB23CD30DC00AED730 /* Locksmith.framework in Frameworks */,
 				C0FB33C423CDA58600AED730 /* SalemoveSDK.framework in Frameworks */,
@@ -199,17 +166,8 @@
 				C0FB338C23CD30DB00AED730 /* Locksmith.framework */,
 				C0FB339323CD30DB00AED730 /* Macaw.framework */,
 				C0FB338F23CD30DB00AED730 /* Moya.framework */,
-				C0FB338823CD30DB00AED730 /* Nimble.framework */,
 				C0FB339023CD30DB00AED730 /* ObjectMapper.framework */,
-				C0FB338223CD30DB00AED730 /* Quick.framework */,
-				C0FB338923CD30DB00AED730 /* ReactiveMoya.framework */,
 				C0FB338323CD30DB00AED730 /* ReactiveSwift.framework */,
-				C0FB338B23CD30DB00AED730 /* RxBlocking.framework */,
-				C0FB339123CD30DB00AED730 /* RxCocoa.framework */,
-				C0FB338A23CD30DB00AED730 /* RxMoya.framework */,
-				C0FB339423CD30DB00AED730 /* RxRelay.framework */,
-				C0FB338D23CD30DB00AED730 /* RxSwift.framework */,
-				C0FB338123CD30DB00AED730 /* RxTest.framework */,
 				C0FB338423CD30DB00AED730 /* SocketIO.framework */,
 				C0FB338E23CD30DB00AED730 /* Starscream.framework */,
 				C0FB339223CD30DB00AED730 /* SwiftPhoenixClient.framework */,
@@ -230,6 +188,7 @@
 				C0FB336623CD237B00AED730 /* Frameworks */,
 				C0FB336723CD237B00AED730 /* Resources */,
 				C0FB33BD23CD30DC00AED730 /* Embed Frameworks */,
+				C0E6B57F246C70C100DBC7A5 /* Run copy-frameworks command for carthage integration */,
 			);
 			buildRules = (
 			);
@@ -285,6 +244,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0E6B57F246C70C100DBC7A5 /* Run copy-frameworks command for carthage integration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Checkouts/ios-bundle/SalemoveSDK.framework",
+				"$(SRCROOT)/Carthage/Checkouts/ios-webrtc/output/bitcode/WebRTC.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Macaw.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SocketIO.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftPhoenixClient.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SWXMLHash.framework",
+			);
+			name = "Run copy-frameworks command for carthage integration";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0FB336523CD237B00AED730 /* Sources */ = {

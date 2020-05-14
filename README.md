@@ -7,22 +7,24 @@
 
 
 ### Sample was created with 
-* XCode 11.2.1 (`/usr/bin/xcodebuild -version`)
-* Swift 5.1.2 (`xcrun swift -version`)
-* Carthage 0.33.0 (`carthage version`)
+* XCode 11.4 (`/usr/bin/xcodebuild -version`)
+* Swift 5.2 (`xcrun swift -version`)
+* Carthage 0.34.0 (`carthage version`)
 
 ### Integration steps
 
 #### 1) Ensure that SalemoveSDK dependency in your Cartfile specifies version tag
 This way you always get the Released state of the SDK
 
-* Example: `github "Salemove/ios-bundle" "0.18.0"`
+* Example: `github "Salemove/ios-bundle" "0.20.0"`
 
 #### 2) Get and build dependencies
-Run `carthage update --platform iOS`
+Run `carthage update --platform iOS` to get latest dependencies
 
-* if you get swift version incompatibility issue, then please add `--no-use-binaries`, it will build all dependencies locally to ensure compatibility with your environment.
-* This takes some time to finish.
+Run `carthage bootstrap --platform iOS` to get exact versions specified in Cartfile.resolved file
+
+* if you get swift version incompatibility issue, then please add `--no-use-binaries`, it builds all dependencies locally to ensure compatibility with your environment, however usually carthage rebuilds automatically when it stumbles upon swift version conflicts.
+* Rebuilding takes some time to finish.
 
 ##### Known issue 1:
 
@@ -47,43 +49,53 @@ Pulled files are placed in *Carthage/checkouts* folder and *Carthage/build* file
 ##### To link the files with XCode 11:
 * In XCode, click your project in the *Project Navigator*. Select your *target*, choose the *General* tab at the top, and scroll down to the *Frameworks, Libraries, and Embedded Content* section at the bottom.
 * Drag and drop all your `*.framework` files (except `RxTest.framework` and any other test related frameworks) from *Carthage/checkouts* and *Carthage/build* folders to that section in XCode.
+	* Current full list of frameworks that can be ignored from *Carthage/build* and *Carthage/checkouts* folder
+    	* `RxTest.framework`
+    	* `RxMoya.framework`
+    	* `RxBlocking.framework`
+    	* `RxCocoa.framework`
+    	* `RxSwift.framework`
+    	* `RxRelay.framework`
+    	* `RxQuick.framework`
+    	* `RxNimble.framework`
+    	* `ReactiveMoya.framework`
 * Go to *Build Settings* and type *Framework Search Paths* to find that section in settings. Doubleclick on its value and validate that these search paths are present. (If they are missing then please add.)
 	* `$(inherited)`
 	* `$(PROJECT_DIR)/Carthage/Build/iOS`
 	* `$(PROJECT_DIR)/Carthage/Checkouts/ios-webrtc/output/bitcode`
 	* `$(PROJECT_DIR)/Carthage/Checkouts/ios-bundle`
+##### Stripping the frameworks for archiving and distirbuting:
+* Go to *Build Phases* and add a Run Script with code `carthage copy-frameworks` which strips the extra architectures
+* Add links to all frameworks into *Input files* section
+	* `$(SRCROOT)/Carthage/Checkouts/ios-bundle/SalemoveSDK.framework`
+	* `$(SRCROOT)/Carthage/Checkouts/ios-webrtc/output/bitcode/WebRTC.framework`
+	* `$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework`
+	* `$(SRCROOT)/Carthage/Build/iOS/Moya.framework`
+	* `$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework`
+	* `$(SRCROOT)/Carthage/Build/iOS/Macaw.framework`
+	* `$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework`
+	* `$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework`
+	* `$(SRCROOT)/Carthage/Build/iOS/SocketIO.framework`
+	* `$(SRCROOT)/Carthage/Build/iOS/Starscream.framework`
+	* `$(SRCROOT)/Carthage/Build/iOS/SwiftPhoenixClient.framework`
+	* `$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework`
+	* `$(SRCROOT)/Carthage/Build/iOS/SWXMLHash.framework`
+
+###### NOTE 1
+This is required due Apple bug [http://www.openradar.me/radar?id=6409498411401216](http://www.openradar.me/radar?id=6409498411401216)
+
+###### NOTE 2
+Even though carthage does the stripping then for some specific usecases it may not suite well as carthage leaves two slices of architectures inside (armv7s and arm64), so if you are developing specifically for arm64 then the frameworks will carry a little extra weight due that limitation. So if this issue becomes a concern then developers need to find a custom solution to overcome this limitation.
+
+* Note, that when the App is finally in AppStore, Apple will basically "rebuild" your binary into separate variants for each device. [https://help.apple.com/xcode/mac/current/#/devbbdc5ce4f](https://help.apple.com/xcode/mac/current/#/devbbdc5ce4f)
+```
+The App Store will create and deliver different variants based on the devices your app supports.
+```
+So having more slices in archived framework should not be a problem.
 
 ##### To link the files with older XCode:
 * In XCode, click your project in the *Project Navigator*. Select your *target*, choose the *General* tab at the top, and scroll down to the *Linked Frameworks and Libraries* section at the bottom.
 * Drag and drop all your `*.framework` files (except `RxTest.framework` and any other test related frameworks) from *Carthage/checkouts* and *Carthage/build* folders to that section in XCode.
-
-##### (For XCode 10 and below) Add a Run script for Carthage:
-* Go to *Build Phases* and add a new *Run Script* build phase. You can name it "Run script for Carthage".
-* Add command `/usr/local/bin/carthage copy-frameworks`
-* In *Input Files* section, add paths to every framework file you have just linked above.
-
-For SalemoveSDK these need to be added to *Run Script*
-
-* `$(SRCROOT)/Carthage/Checkouts/ios-webrtc/output/release/WebRTC.framework`
-* `$(SRCROOT)/Carthage/Checkouts/ios-bundle/SalemoveSDK.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/Result.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/SocketIO.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/SwiftPhoenixClient.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/Macaw.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/Locksmith.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/SWXMLHash.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/Starscream.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/Moya.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework`
-* `$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework`
 
 ### For more specific information please see latest Carthage documentation
 * [https://github.com/Carthage/Carthage#adding-frameworks-to-an-application](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application)
